@@ -1,0 +1,53 @@
+<!--
+작성자 : 
+목적 : 
+환경 : 
+작성날짜 : 
+-->
+
+<!--html5 파일이라는 뜻-->
+<!DOCTYPE html>
+<html lang="en">
+    <!-- body를 지원하기위한 다양한 태그를 넣는 곳-->
+    <head>
+        <!--렌더링할 때의 캐릭터셋을 설정-->
+        <meta charset="UTF-8">
+        <!--반응형 웹용 메타데이터-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- meta tag는 charset 제외하고 모두 비표준, 나머지는 주석으로 처리하는 것이 표준이다-->
+        
+        <!--bookmark때 보여지는 글자인 title-->
+        <title>북마크할 때 보여지는 부분입니다.</title>
+        
+        <!--spript는 자바 스크립트를 의미-->
+        <!-- <script>
+            function start(){
+                alert("지금은 시스템 점검시간입니다.")
+            }
+        </script> -->
+
+        <!--문서를 꾸며주는 style, head태그 안에서만 가능-->
+        <!-- <style> 
+        </style> -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src = "script/test.js"></script>
+        
+    </head>
+    
+    <!-- user가 보는 부분인 body-->
+    <body onload="start()">
+    <!-- <body> -->
+        이 문서는 <span>한글</span>이 보여지는 문서입니다. <br>
+        
+        <font color="blue" size = "7">Hello, World</font>
+        <!--script는 body에서 쓸 수 있으며, head에 쓰면 body보다 먼저 실행되어야할 때 쓴다.-->
+        <script>
+            // 자바스크립트에서의 표준 출력 
+            document.write("Hello,World");
+        </script>
+
+    </body>
+
+</html>
