@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Last 선택자 연습</title>
+    <style>
+        div>p:first-child{
+            color: blue;
+        }
+        /* div>p:first-of-type{
+            color: blue;
+        } */
+        div>p:last-of-type{ /*p들중 막내*/
+            color: red;
+        }
+        div >h1:first-child{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Hello, World</h1> <!--전체 첫째-->
+        <p>자신의 삶을 주도하라.</p><!--p들 중 첫째-->
+        <p>끝을 생각하며 시작하라.</p>
+        <p>소중한 것을 먼저 해라.</p><!--p들 중 막내-->
+        <h2>스티븐 코디의 책 소개였습니다.</h2><!--전체 막내-->
+    </div>
+</body>
+</html>
