@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>literal demo</title>
+</head>
+<body>
+    <script>
+        // // ===연산자는 값과 타입을 비교
+        // if('1'===1.0){
+        //     document.write('같다.');
+        // }else{
+        //     document.write('다르다');
+        // }
+        var student = {
+            name : '김철수',
+            age : 24,
+            hp : '010-1234-5678',
+            address : '서울시 강남구 역삼동 한독빌딩 8층',
+            toString : function(){
+                return 'Hello, World';
+            }
+        }; // student 객체
+        document.write('<h1>학생정보</h1>');
+        document.write('<ul>');
+        document.write('<li>이름 : '+student.name+'</li>');
+        document.write('<li>나이 : '+student.age+'</li>');
+        document.write('<li>핸드폰 : '+student.hp+'</li>');
+        document.write('<li>주소 : '+student.address+'</li>');
+        document.write('<li>문자열 : '+student.toString()+'</li>');
+        document.write('</ul>');
+    </script>
+</body>
+</html>

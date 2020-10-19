@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지역변수와 전역변수 다루기</title>
+</head>
+<body>
+    <script>
+        var a=10; // 전역변수
+        function sample(){
+            // a=100; // 지역변수가 아니다.
+            var a = 100; // 지역변수
+            console.log('a = '+a); // 100
+        }
+        sample();
+        console.log('a = '+a); // 10 
+    </script>
+</body>
+</html>

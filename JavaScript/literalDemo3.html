@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>literal Demo</title>
+    <script>
+        function check(){
+            if(document.myform.username.value){
+                alert('값이 있습니다.')
+            }else{
+                alert('값이 없습니다.')
+            }
+
+            if(0){
+                // 0은 거짓, 나머지 숫자는 참
+            }else{
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="login.jsp" name= "myform">
+        Name : <input type="text" name="username"><br />
+        <button type="button" onclick="check()">제출</button>
+    </form>    
+</body>
+</html>
