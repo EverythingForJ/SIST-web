@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        *{
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+        /*
+        값이 하나 : 상하좌우 모두
+        값이 두개 : 상하,좌우
+        값이 세개 : 상,좌우, 하
+        값이 네개 : 상, 우, 하, 좌
+        */
+        div{
+            padding: 10px;
+            width: 500px; height: 500px;
+            /* border-style: solid dashed dotted double;
+            border-width: 5px;
+            border-color: red blue green orange; */
+            /* border-right: 1px solid red;
+            border-bottom: 5px double transparent; */
+            border: 5px solid red;
+            border-radius: 20px 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box Model</h1>
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Laboriosam ipsum officiis exercitationem velit nihil, 
+        ab recusandae rem quisquam odit et debitis laborum 
+        ea error voluptatum perferendis culpa! 
+        Recusandae, quo unde?
+    </div>
+</body>
+</html>
