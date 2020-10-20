@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연산자 연습</title>
+</head>
+
+<body>
+    <h1>검색 엔진</h1>
+    <ul>
+        <li><a href="#">Naver</a></li>
+        <!-- #과 같은 기능을 하는 void -->
+        <li><a href="javascript:void(0);">Google</a></li>
+    </ul>
+
+    <script>
+        var fruits = ['사과','딸기','복숭아','포도'];
+        console.log(fruits.length); // 4
+        console.log(fruits[0]); // 사과
+        delete fruits[0]; 
+        console.log(fruits.length); // 4
+        console.log(fruits[0]); // undefined
+        // 길이는 변하지않고 사과라는 값만 지워진다.
+
+        var car ={name:'Sonata', maker:'Hyundai', price:30000000}
+        console.log(car.maker);
+        delete car.maker;
+        console.log(car.maker);
+        // delete는 값만 지운다.
+
+        var myvariable = 'Hello, World';
+        console.log(myvariable);
+        var flag = delete myvariable;
+        console.log(myvariable);
+        // var를 쓰면 delete가 안된다.
+        // flag = false : 삭제 실패
+
+        num=100;
+        console.log(num);
+        delete num;
+        console.log(num);
+        // var를 안쓰면 delete가 된다.
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연산자 연습</title>
+</head>
+<body>
+    <script>
+        var fruits = ['사과','딸기','복숭아','포도'];
+        console.log('딸기' in fruits);
+        console.log(0 in fruits);
+        // 0번째가 가리키는게 사과, 사과가 멤버는 아니다.
+        // 멤버는 0번째이다.
+
+        var car ={name:'Sonata', maker:'Hyundai', price:30000000}
+        console.log('Sonata' in car);
+        console.log('name' in car);
+        // name이 멤버, Sonata가 멤버가 아니다.
+
+        var fruits = ['사과','딸기','복숭아','포도'];
+        console.log(0 in fruits); // true
+        var flag = delete fruits[0];
+        console.log(flag); //true
+        console.log(0 in fruits); // false
+        console.log(fruits.length); // 그대로 4
+
+        // JSON 표기법
+        // var car ={name:'Sonata', maker:'Hyundai', price:30000000}
+        var car ={'name':'Sonata', 'maker':'Hyundai', 'price':30000000}
+        console.log('name' in car); // true
+        flag = delete car['name'];
+        console.log(flag); // true
+        console.log('name' in car); // false
+        
+    </script>
+</body>
+</html>
