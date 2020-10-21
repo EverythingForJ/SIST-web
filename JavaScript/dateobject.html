@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Object 연습</title>
+</head>
+<body>
+    <script>
+        // var now = new Date();
+        // var now = new Date('2020년 10월 19일');
+        var now = new Date('19 October 2020');
+
+        // document.write(now.toString()+"<br />");
+        // document.write(now.toLocaleString()+"<br />");
+        // document.write(now.toISOString()+"<br />");
+
+        var myvariable = Date.parse('19 October 2020');
+        document.write(myvariable+"<br />");
+        document.write(new Date(myvariable).toLocaleDateString());
+
+    </script>
+</body>
+</html>

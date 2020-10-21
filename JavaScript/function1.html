@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function 연습</title>
+</head>
+<body>
+    <script>
+        // 값 복사
+        // function change(myvariable){
+        //     myvariable += ', World';
+        //     document.write('In Change\'s myvariable = '+ myvariable + '<br />');
+        // }
+        // var a = 'Hello';
+        // document.write('Before Change\'s a = '+ a + '<br />');
+        // change(a);
+        // document.write('After Change\'s a = '+ a + '<br />');
+
+        // 주소 호출
+        function change(myvariable){
+            myvariable.age = 20;
+            document.write('In Change\'s myvariable = '+ myvariable.age + '<br />');
+        }
+        var a = {age : 5};
+        document.write('Before Change\'s a = '+ a.age + '<br />');
+        change(a); // call by reference
+        document.write('After Change\'s a = '+ a.age + '<br />');
+    </script>
+</body>
+</html>
