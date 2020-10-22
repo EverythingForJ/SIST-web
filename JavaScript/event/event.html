@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom level 0 Event 연습</title>
+    <script>
+        // 전통적 모델
+        window.onload = setup; // onload : 페이지 loading 후
+        function setup(){
+            var buttons = document.getElementsByTagName('button');
+            buttons[0].onclick = change; // event target에 event type과 연결하고, event handler 등록하기
+            console.log(this);
+        }
+        function change(){
+            document.body.style.backgroundColor='yellow';
+            console.log(this);
+        }
+    </script>
+</head>
+<body>
+    <!-- <button onclick="change()">Click Me!!!</button> -->
+    <!-- DOM Level 0의 inline model-->
+    <!-- inline 방법은 분리가 되지않아서 잘 쓰지않는다.-->
+
+    <button>Click Me!!!</button>
+
+</body>
+</html>
