@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM object 연습</title>
+    <style>
+        button{
+            font-size: 2em;
+        }
+    </style>
+    <script>
+        var mysize;
+        window.onload = function(){
+            mysize = 1;
+            var buttons = document.getElementsByTagName('button');
+            buttons[0].addEventListener('click', myresize, false);
+            buttons[1].addEventListener('click', myresize, false);
+        }
+        function myresize(evt){
+            if(evt.target.innerHTML == '+'){
+                mysize += 0.1;
+            }else if(evt.target.innerHTML == '-'){
+                mysize -= 0.1;
+            }
+            document.getElementsByTagName('div')[1].style.fontSize = mysize + 'em';
+        }
+
+    </script>
+</head>
+<body>  
+    <div>
+        <button>+</button>&nbsp;&nbsp;
+        <button>-</button>
+    </div>
+
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nobis veniam accusamus aspernatur deleniti et iste itaque maxime, saepe quis sed blanditiis laudantium qui unde error porro vitae. Vitae, nobis?
+    Quisquam, iste commodi, animi exercitationem ipsum doloremque odio soluta alias ex rem consequatur fuga temporibus qui iusto? Distinctio, aspernatur soluta. Velit vel eius id, dolore aspernatur distinctio sequi. Fugiat, veniam.
+    Aliquam quia nesciunt provident beatae facere odio earum aliquid officia fugiat enim, sunt natus quod consequatur iste distinctio qui. Ut molestias libero earum neque dignissimos repellat nobis rerum suscipit consequatur?
+    Beatae aperiam nihil et dolore similique impedit molestias omnis eum nemo rem libero dignissimos fuga, incidunt velit totam, nostrum quidem veniam consectetur? Repellat explicabo dicta distinctio iusto voluptatem expedita itaque?
+    Voluptatem adipisci eaque quo totam eum fuga dolorum non iure. Qui ad autem doloremque hic tempora, placeat voluptatibus illo ducimus, inventore voluptatem quidem minima architecto voluptatum excepturi fuga ipsa dolore.
+    Qui molestiae, libero vel consequuntur rerum dolorum omnis esse voluptate culpa molestias reiciendis alias earum porro tenetur nihil optio dicta numquam exercitationem aspernatur! Quam incidunt, reprehenderit id ab explicabo harum?
+    Necessitatibus quasi vel minima quidem sit illo quae laudantium? Maxime accusantium eum repellat, eaque voluptatum cupiditate, earum aperiam error, possimus modi facere. Obcaecati fugit fuga, delectus enim amet veritatis commodi?</div>    
+</body>
+</html>
