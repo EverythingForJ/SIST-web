@@ -1,0 +1,46 @@
+#mainmy{
+    border: 1px solid black;
+    padding: 30px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+ul>li{
+    padding-top: 10px;
+}
+h1{
+    text-align: center;
+}
+#resultmy{
+    border: 1px solid chocolate;
+    padding: 30px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    color: gray;
+    visibility:hidden;
+}
+#finalscore{
+    color: red;
+    font-weight: 900;
+    font-size: 20px;
+}
+p{
+    color: gray;
+}
+#btnInput{
+    margin: auto;
+}
+#namecheck{
+    text-align: right;
+}
+#rbutton{
+    text-align: center;
+}
+.inputlist{
+    float: right;
+}

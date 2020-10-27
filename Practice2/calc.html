@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계산 퀴즈</title>
+    <link rel="stylesheet" href="css/calc.css">
+    <script src="script/calc.js"></script>
+</head>
+<body>
+    <h1>계산 퀴즈</h1>
+    <form name="mymain" id="mainmy">
+        <p>이름과 계산의 답을 입력한 후 완료 단추를 눌러주세요.</p>
+        <ul>
+            <li id="namecheck">이름 : <input type="text" size="8" name="myname"></li>
+            <li>1. 5 + 6 = <input type="text" size="3" class="inputlist" name="mone" id="idone"></li>
+            <li>2. 8 - 3 = <input type="text" size="3" class="inputlist" name="mtwo" id="idtwo"></li>
+            <li>3. 7 x 6 = <input type="text" size="3" class="inputlist" name="mthree" id="idthree"></li>
+            <li>4. 15 ÷ 3 = <input type="text" size="3" class="inputlist" name="mfour" id="idfour"></li>
+            <li>5. 8 + 6 - 3 x 2 ÷ 2 = <input type="text" size="3" class="inputlist" name="mfive" id="idfive"></li>
+            <br />
+            <li id="rbutton"><button type="button" id = 'btnInput'>완료</button></li>
+        </ul>
+    </form>
+    <form name="myresult" id="resultmy">
+        <ul>
+            <li><span id='username'></span>님의 <span id='mytoday'></span> 계산 퀴즈 결과 총 5문제 중 <span id='fail'></span>문제를 틀렸습니다.</li>
+            <li>틀린 답은 빨간색으로 표시 하였습니다.</li>
+            <li>최종 점수는 <span id='finalscore'></span> 입니다.</li>
+        </ul>
+    </form>
+</body>
+</html>
